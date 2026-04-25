@@ -1,0 +1,132 @@
+/* =======================================================
+   RESPONSIVE STYLES (FINAL REFINED VERSION)
+   FOR 5-6 INCH PHONES - MAXIMUM DESKTOP LOOK
+   ======================================================= */
+
+@media (max-width: 768px) {
+    /* ১. গ্লোবাল হেডিং ফিক্স: সব সেকশনের শিরোনাম একই মাপের */
+    h2, 
+    .section-title, 
+    .about-title, 
+    .routine-title, 
+    .daily-update-section h2, 
+    .register-section h2,
+    .notice-section h2 { 
+        font-size: 1.15rem !important; 
+        margin-bottom: 0.8rem !important;
+        text-align: center !important;
+    }
+
+    /* ২. টপবার (আল্ট্রা স্লিম ও কমপ্যাক্ট) */
+    .topbar {
+        padding: 0.15rem 0.4rem !important;
+        font-size: 0.52rem !important;
+        min-height: auto !important;
+    }
+    .topbar-left { gap: 0.25rem !important; }
+    .topbar i { font-size: 0.6rem !important; }
+    .topbar-right { gap: 0.5rem !important; }
+    .topbar-right a { width: 1.3rem !important; height: 1.3rem !important; }
+
+    /* ৩. নেভিগেশন ও লোগো */
+    .navbar { padding: 0.5rem 0.7rem !important; }
+    .site-logo { width: 1.5rem !important; height: 1.5rem !important; }
+    .logo h1 { font-size: 0.85rem !important; }
+    .tagline { font-size: 0.5rem !important; }
+    .nav-menu { gap: 0.4rem !important; }
+    .nav-menu a { font-size: 0.58rem !important; }
+
+    /* ৪. হিরো সেকশন */
+    .hero { min-height: 45vh !important; }
+    .hero h2 { font-size: 1.3rem !important; }
+    .hero p { font-size: 0.7rem !important; max-width: 95%; margin-bottom: 1rem !important; }
+    .btn-primary, .btn-secondary { padding: 0.5rem 0.9rem !important; font-size: 0.7rem !important; }
+
+    /* ৫. পরিসংখ্যান (৪টি কলাম ও চারকোণা) */
+    .stats { padding: 2rem 0.5rem !important; }
+    .stats-grid { grid-template-columns: repeat(4, 1fr) !important; gap: 6px !important; }
+    .stat-box { padding: 15px 2px !important; border-radius: 0 !important; }
+    .stat-box i { font-size: 1.4rem !important; margin-bottom: 5px !important; }
+    .stat-box h3 { font-size: 1.1rem !important; margin: 4px 0 !important; }
+    .stat-box p { font-size: 0.65rem !important; }
+
+    /* ৬. আমাদের সম্পর্কে ও কোর্স (৩টি কলাম ও চারকোণা) */
+    .about, .courses { padding: 2rem 0.3rem !important; }
+    .about-features, .courses-grid { 
+        grid-template-columns: repeat(3, 1fr) !important; 
+        gap: 5px !important; 
+        width: 100% !important; 
+    }
+    .feature-card, .course-card { padding: 12px 2px !important; border-radius: 0 !important; }
+    .feature-icon, .course-card i { width: 1.8rem !important; height: 1.8rem !important; font-size: 1rem !important; margin-bottom: 4px !important; }
+    .feature-card h3, .course-card h3 { font-size: 0.75rem !important; margin-bottom: 5px !important; }
+    .feature-card p, .course-card p { font-size: 0.52rem !important; line-height: 1.2 !important; }
+
+    /* ৭. টিচার সেকশন (৩টি কলাম, কার্ড চারকোণা কিন্তু ছবি গোল) */
+    .teachers { padding: 2rem 0.3rem !important; }
+    .teachers .teachers-grid { grid-template-columns: repeat(3, 1fr) !important; gap: 6px !important; }
+    .teachers .teacher-card { padding: 12px 2px !important; border-radius: 0 !important; background: #1e1e1e !important; }
+    .teachers .teacher-img { 
+        width: 45px !important; height: 45px !important; 
+        border-radius: 50% !important; border-width: 1.5px !important; 
+        margin-bottom: 4px !important; object-fit: cover; 
+    }
+    .teachers .teacher-card h3 { font-size: 0.65rem !important; margin-bottom: 2px !important; }
+    .teachers .teacher-subject { min-width: 60px !important; font-size: 7px !important; height: 16px !important; border-radius: 0 !important; }
+    .teachers .teacher-card p { font-size: 0.55rem !important; }
+
+    /* ৮. নোটিশ বোর্ড (ইউনিফর্ম ও চারকোণা) */
+    .notice-section { padding: 2rem 0.3rem !important; }
+    .notice-item { padding: 12px 10px !important; border-radius: 0 !important; background: #1e1e1e !important; }
+    .notice-text { font-size: 0.72rem !important; }
+    .notice-badge { font-size: 0.58rem !important; border-radius: 0 !important; }
+
+    /* ৯. ডেইলি আপডেট (৩টি ক্লাস পাশাপাশি ও চারকোণা) */
+    .daily-update-section { padding: 2rem 0.3rem !important; }
+    .daily-update-card { padding: 12px 6px !important; border-radius: 0 !important; }
+    .lesson-grid { grid-template-columns: repeat(3, 1fr) !important; gap: 4px !important; }
+    .lesson-item { padding: 8px 2px !important; border-radius: 0 !important; }
+    .lesson-title { font-size: 0.62rem !important; }
+    .lesson-subject { font-size: 0.58rem !important; }
+    .lesson-teacher { font-size: 0.55rem !important; }
+
+    /* ১০. রুটিন টেবিল (স্লিম টেক্সট ও বর্ডারহীন ক্লিন লুক) */
+    .routine-section { padding: 2rem 0.3rem !important; }
+    .routine-tab { padding: 8px 4px !important; font-size: 0.48rem !important; border-radius: 0 !important; }
+    .routine-table { font-size: 0.38rem !important; width: 100% !important; border: 0 !important; border-collapse: collapse !important; }
+    .routine-table th, .routine-table td { padding: 4px 1px !important; border: 0 !important; }
+    .routine-time { width: 34px !important; font-size: 0.35rem !important; }
+    .routine-print-btn, .routine-copy-btn { padding: 6px 10px !important; font-size: 0.62rem !important; border-radius: 8px !important; }
+
+    /* ১১. ডিজিটাল ঘড়ি (৩ লেয়ার সমান দূরত্ব) */
+    .clock-section { padding: 2rem 0.3rem !important; }
+    .clock-outer { padding: 10px !important; border-radius: 0 !important; }
+    .clock-wrapper { padding: 10px !important; border-radius: 0 !important; }
+    .clock-box { padding: 20px 5px !important; border-radius: 0 !important; }
+    .clock-time { font-size: 1.8rem !important; line-height: 1 !important; }
+    .clock-date { font-size: 0.65rem !important; }
+
+    /* ১২. স্টুডেন্ট এডমিশন ফরম */
+    .register-section { padding: 2rem 0.3rem !important; }
+    .register-box { padding: 15px 10px !important; gap: 10px !important; border-radius: 0 !important; }
+    .register-box input, .register-box select, .register-box button { font-size: 0.7rem !important; padding: 10px 8px !important; border-radius: 0 !important; }
+    .register-box button { background: #ff9800 !important; font-weight: 700; }
+
+    /* ১৩. ফুটার (৩টি কলাম ও চারকোণা আইকন) */
+    .footer { padding: 2rem 0.8rem 1rem !important; }
+    .footer-grid { grid-template-columns: repeat(3, 1fr) !important; gap: 0.4rem !important; }
+    .footer h3 { font-size: 0.7rem !important; }
+    .footer h3::after { width: 1.2rem !important; }
+    .footer-about p, .footer-links a, .footer-contact p { font-size: 0.48rem !important; line-height: 1.3; }
+    .social-icons a { width: 1.3rem !important; height: 1.3rem !important; font-size: 0.6rem !important; }
+    .footer-bottom { font-size: 0.5rem !important; margin-top: 1.2rem !important; }
+}
+
+/* অতি ক্ষুদ্র স্ক্রিন ফিক্স (৩৪০-৩৮০ পিক্সেল ফোনের জন্য) */
+@media (max-width: 380px) {
+    .nav-menu a { font-size: 0.48rem !important; }
+    .clock-time { font-size: 1.5rem !important; }
+    .routine-table { font-size: 0.35rem !important; }
+    .routine-time { width: 32px !important; }
+    .lesson-subject { font-size: 0.52rem !important; }
+}
