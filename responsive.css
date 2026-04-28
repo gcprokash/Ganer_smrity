@@ -121,6 +121,7 @@
     .footer-links ul { margin: 0 !important; padding: 0 !important; list-style: none !important; }   
     .footer-links li { margin-bottom: 0.5rem !important; }   
     .footer-links a { display: block !important; }  
+}
 
 /* অতি ক্ষুদ্র স্ক্রিন ফিক্স (৩৪০-৩৮০ পিক্সেল ফোনের জন্য) */
 @media (max-width: 380px) {
