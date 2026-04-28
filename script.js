@@ -1,4 +1,4 @@
-/* ================= VARIABLES & APIS ================= */
+/*jshint esversion: 11 */
 const sheetURL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRt4hTMNVe8OxSO1hpjg3DR3ruUTLA8OlVem_49cRMAdwhNPfpxRLrZFoJt9CQ-UO4NF1Hm1GQmREHs/pub?gid=0&single=true&output=csv";
 const API_URL = "https://script.google.com/macros/s/AKfycbyDznSCqU-gxcqPwQCQ-wTdiLS4kOxgQhQziiVjbQt7QQ5sywDSB4jQtQ-ivNqsyKtENA/exec";
 const TEACHER_SHEET_URL = "https://opensheet.elk.sh/1M95Tze9o6OYJj-RLAV-Y-nk8Vk2YWWWXG7qjigxIgb8/Sheet1";
@@ -239,8 +239,8 @@ function copyRoutine(){
 
   rows.forEach((row,i)=>{
     const cols = [...row.querySelectorAll("th,td")].map(c=>c.innerText.trim());
-    text += i === 0
-      ? cols.join(" | ") + "\n" + "-".repeat(40) + "\n"
+    text += i === 0 ?
+    cols.join(" | ") + "\n" + "-".repeat(40) + "\n"
       : `🕓 ${cols[0]} ➔ ${cols.slice(1).join(" | ")}\n`;
   });
 
