@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gcprokash.github.io/Ganer_smrity/sitemap.xml
